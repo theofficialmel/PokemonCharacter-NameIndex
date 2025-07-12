@@ -57,7 +57,7 @@ display: none
 } */
 
 /* Position the "next button" to the right */
-}
+
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
@@ -100,4 +100,6 @@ display: none
   font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
-}
+  font-size: xx-large;
+  justify-content: center;
+} 

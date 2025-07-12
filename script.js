@@ -1,10 +1,7 @@
-
-let currentpage = 1
-
-
+let currentpage = 1;
 
 async function fetchData(pageNumber) {
-  const limit = 10
+  const limit = 10;
   const offset = (pageNumber - 1) * limit;
 
   try {
@@ -22,7 +19,6 @@ async function fetchData(pageNumber) {
   }
 }
 
-
 showCharacters(currentpage);
 
 async function showCharacters(page) {
@@ -32,7 +28,7 @@ async function showCharacters(page) {
 
 function RenderData(data) {
   const container = document.getElementById("container1");
-  container.innerHTML = ""
+  container.innerHTML = "";
   data.results.forEach((character) => {
     //console.log(element.name);
     const characterElement = document.createElement("div");
@@ -47,7 +43,6 @@ function RenderData(data) {
 }
 // write logic to render data from api
 
- 
 const itemsperpage = 10;
 // const pagecount = Math.ceil(items.length) / itemesperpage;
 
@@ -72,33 +67,24 @@ function handlepageclick(newpage) {
   updatepaginationcontrols();
 }
 
-
-
-
 // const itemesperpage = 10;
 // const pagecount = Math.ceil(items.length) / itemsperpage;
 
 // function fetchposts(page) {
 //   const startIndex = (page - 1) * itemesperpage;
 //   const endIndex = startIndex + itemesperpage;
- 
 
 // }
 
 function nextbutton() {
-  
-
   currentpage++;
-  showCharacters(currentpage)
+  showCharacters(currentpage);
 }
 
 function previousbutton() {
-  showCharacters(currentpage)
+  showCharacters(currentpage);
   currentpage--;
-  
 }
-
-
 
 //image slideshow
 
@@ -130,22 +116,7 @@ function previousbutton() {
 
 // showslide(currentindex);
 
-
-
 // nextbtn.addEventListener('click', nextslide);
 // prevbtn.addEventListener('click', prevslide);
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
